@@ -12,3 +12,8 @@ provider "azurerm" {
 
   }
 }
+
+resource "azurerm_resource_group" "maquinas-virtuais" {
+  name     = "azure-VM"
+  location = "East US"
+}
