@@ -6,7 +6,7 @@
 **/.terraform/*
 
 variaveis.tf
-
+*.hcl
 # .tfstate files
 *.tfstate
 *.tfstate.*
