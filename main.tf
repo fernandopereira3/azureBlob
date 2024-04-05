@@ -13,7 +13,7 @@ provider "azurerm" {
   }
 }
 
-resource "azurerm_resource_group" "maquinas-virtuais" {
-  name     = "azure-VM"
+resource "azurerm_resource_group" "resource-blob" {
+  name     = "resourceblob"
   location = "East US"
 }
