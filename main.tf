@@ -2,7 +2,7 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "=3.0.0"
+      version = "3.97.1"
     }
   }
 }
@@ -13,7 +13,13 @@ provider "azurerm" {
   }
 }
 
-resource "azurerm_resource_group" "resource-blob" {
+resource "azurerm_resource_group" "resourceblob" {
   name     = "resourceblob"
   location = "East US"
+}
+
+
+resource "azurerm_resource_group" "resource-aplicacao" {
+  name     = "resourceAplicacao"
+  location = "brazilsouth"
 }

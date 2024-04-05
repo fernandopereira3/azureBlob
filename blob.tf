@@ -1,7 +1,7 @@
 resource "azurerm_storage_account" "arquivosfernando" {
   name                     = "arquivosfernando"
-  resource_group_name      = azurerm_resource_group.maquinas-virtuais.name
-  location                 = azurerm_resource_group.maquinas-virtuais.location
+  resource_group_name      = azurerm_resource_group.resourceblob.name
+  location                 = azurerm_resource_group.resourceblob.location
   account_tier             = "Standard"
   account_replication_type = "LRS"
 }
